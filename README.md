@@ -1,6 +1,8 @@
 此工具的目的在于降低常用字前五百的击键数, 提高键准
 
-## 功能介绍
+[toc]
+
+## 1. 功能介绍
 
 ![](https://github.com/KR673/wsHone/blob/master/static/image/screenshot.png?raw=true)
 
@@ -13,6 +15,6 @@
    1. 练习: 练习此次记录
    2. 删除: 删除记录
 
-## 使用
+## 2. 使用
 
 下载之后, 直接双击`main.html`运行
