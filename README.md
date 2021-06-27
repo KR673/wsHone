@@ -2,7 +2,7 @@
 
 ## 功能介绍
 
-![](E:\GitProject\wsHone\wsHone\static\image\screenshot.png)
+![](https://github.com/KR673/wsHone/blob/master/static/image/screenshot.png)
 
 1. 输入文字五笔编码, 使用空格确定. 如果输入错误会显示红色并提示
 2. 当前进度, 默认情况下是前五百所有文字
