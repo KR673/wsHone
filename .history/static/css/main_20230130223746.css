@@ -1,0 +1,143 @@
+html,body{
+    height: 100%;
+    background-color: #282c34;
+    margin:0px
+}
+#word{
+    color: #abb2bf;
+    font-size: 150px;
+    font-weight: 500;
+}
+.type-error{
+    color: #d6545f !important;
+}
+.content{
+    text-align: center;
+}
+.input-content{
+    height: auto;
+    margin-top: 10%;
+}
+.input-content .input{
+    background-color: #282c34;
+    border: 0px;
+    border-bottom: 1px solid #abb2bf;
+    margin-top: 20px;
+    color: #abb2bf;
+    text-align: center;
+    font-size: 20px;
+}
+
+.input-content .input:focus{
+    outline: none;
+    border: 0px;
+    border-bottom: 1px solid #abb2bf;
+}
+#key{
+    color: #d6545f;
+    font-size: 20px; 
+}
+
+.fault-content{
+    height: auto;
+    width: 15%;
+    background-color: #282c34;
+    color: #abb2bf;
+    position: absolute;
+    right: 0px;
+    top: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow:2px 2px 5px #000;;
+}
+.key-num{
+    display: flex;
+}
+.key-num span{
+    /* background-color: #8BC34A; */
+    height: 100%;
+    transform: translateY(35%);
+    padding-right: 1em;
+    display: none;
+}
+.key-num div{
+    flex:25% 1 1;
+    /* border-bottom: 1px slategray solid; */
+    letter-spacing: 2px;
+    padding: 0px 10px 0px 10px;
+}
+/* .key-num span, .key-num div{
+    float: left;
+} */
+#process{
+    margin-bottom: 50px;
+    width: 100%;
+}
+#process .process-color{
+    height: 21px;
+    width: 0%;
+    background-color: #8BC34A;
+}
+#process span{
+    position: absolute;
+    left: 49%;
+    top: 0px;
+    color:#abb2bf;
+}
+.type-history{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: #abb2bf;
+}
+.history-table{
+    width: 100%;
+    text-align: center;
+    border: 1px solid; 
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.history-table td, .history-table th{
+    border: 1px solid;
+    padding: 3px;
+}
+.button-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    background-color: #282c34;
+    border: 1px solid #abb2bf;
+    color: #abb2bf;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #abb2bf;
+    color: #282c34;
+}
+.history-del, #fault-empty{
+    color: #d6545f;
+}
+.fault-content-button-container{
+    margin: 20px 0 5px 0;
+}
+
+@font-face{
+    font-family: "HanZiRootFont";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../font/HanZiRootFont.woff2") format("woff2"), url("../font/HanZiRootFont.ttf") format("ttf");
+}
+
+.hanzi-root{
+    font-family: HanZiRootFont;
+}
+#source-change-container{
+    text-align: center;
+}
+#source-change{
+    background-color: #f0f8ff00;
+    color: #abb2bf;
+}
