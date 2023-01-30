@@ -16,14 +16,20 @@
             <span>0%</span>
         </div>
     </div>
-    <div class="input-content">
+    <div id="source-change-container">
+        <select id="source-change">
+            <option value="frequently">常用字500</option>
+            <option value="hanziRoot">字根练习</option>
+        </select>
+    </div>
+    <div class="input-content hanzi-root">
         <div id="word" class="content"></div>
         <div class="content">
             <input id="input" class="input"></input>
             <p id="key" hidden></p>
         </div>
     </div>
-    <div class="fault-content">
+    <div class="fault-content hanzi-root">
         <div id="one-key" class="key-num">
             <span>1</span>
             <div class="area"></div>
@@ -50,6 +56,7 @@
     </div>
     <script src="./lib/jquery-3.5.1.min.js"></script>
     <script src="./pythonScript/tempData.js"></script>
+    <script src="./pythonScript/hanZiRoot.js"></script>
     <script src="./static/js/main.js"></script>
 
 </body>

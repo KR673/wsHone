@@ -123,3 +123,21 @@ button:hover{
 .fault-content-button-container{
     margin: 20px 0 5px 0;
 }
+
+@font-face{
+    font-family: "HanZiRootFont";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../font/HanZiRootFont.woff2") format("woff2"), url("../font/HanZiRootFont.ttf") format("ttf");
+}
+
+.hanzi-root{
+    font-family: HanZiRootFont;
+}
+#source-change-container{
+    text-align: center;
+}
+#source-change{
+    background-color: #f0f8ff00;
+    color: #abb2bf;
+}

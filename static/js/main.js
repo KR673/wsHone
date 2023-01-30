@@ -24,7 +24,7 @@ class DataErr{
 
         // limit maximum capacity
         if(dataList.length == 15){
-            dataList.splice(0, 1)        
+            dataList.splice(0, 1)
         }
 
         dataList.push(this)
@@ -62,11 +62,11 @@ class DataErr{
     }
 }
 
-init()
+init(frequentlyWord)
 
 function init(dataAccept){
 
-    var allData = dataAccept || dataSource
+    var allData = dataAccept
     var arr = new Array()
 
     $.each(allData, function(index, n){
@@ -267,3 +267,21 @@ function faultSave(){
     var dataLog = new DataErr(pageData.dataError)
     dataLog.save()
 }
+
+$('#source-change').on('change', function() {
+    // 添加字根class
+    if ($(this).val() == 'hanziRoot') {
+        $('input-content').addClass('hanzi-root');
+        $('hanzi-root').addClass('hanzi-root');
+    } else {
+        $('input-content').removeClass('hanzi-root');
+        $('hanzi-root').removeClass('hanzi-root');
+    }
+    
+    // 加载数据源
+    if ($(this).val() == 'hanziRoot') {
+        init(hanZiRoot)
+    } else {
+        init(frequentlyWord)
+    }
+})
