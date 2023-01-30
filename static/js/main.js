@@ -12,6 +12,7 @@ class DataErr{
         this.dateTime = new Date();
         this.data = data;
         this.count = data?.length;
+        this.flag = $('#source-change').val()
     }
     
     // save data to local
@@ -105,7 +106,7 @@ function randerHistoryList(){
                             '<th style="width:50px">序号</th>'+
                             '<th style="width:100px">数量</th>'+
                             '<th style="width:300px">日期</th>'+
-                            '<th></th>'+
+                            '<th>内容</th>'+
                             '<th style="width:150px">操作</th>'+
                         '</tr>'
         $.each(typeHistoryList, function (index , n){  
@@ -113,7 +114,16 @@ function randerHistoryList(){
             tableHtml += '<td>' + index + '</td>'
             tableHtml += '<td>' + n.count + '</td>'
             tableHtml += '<td>' + n.dateTime+ '</td>'
-            tableHtml += '<td></td>'
+            let allWork = ""
+            n.data.forEach(item => {
+                allWork += item['word'] + " "
+            });
+
+            let className = ''
+            if (n.flag == 'hanziRoot') {
+                className = 'hanzi-root'
+            }
+            tableHtml += '<td class="' + className + '">'+ allWork + '</td>'
             tableHtml += '<td class="history-option button-container">' +
                             '<button class="history-load" onclick=historyLoad('+index+')>练习</button>'+
                             '<button class="history-del" onclick=historyDelete('+index+')>删除</button>'+

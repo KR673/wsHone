@@ -99,6 +99,10 @@ html,body{
     border-collapse: collapse;
     table-layout: fixed;
 }
+.history-table td:nth-child(4) {
+    padding-left: 10px;
+    text-align: left;
+}
 .history-table td, .history-table th{
     border: 1px solid;
     padding: 3px;
